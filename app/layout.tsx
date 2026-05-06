@@ -1,15 +1,18 @@
 import type { Metadata, Viewport } from 'next';
 
 import './globals.css';
+
+import { Nunito } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
+
+const display = Nunito({ subsets: ["latin"], variable: "--font-display", display: "swap" });
+const sans = Open_Sans({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+
+
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { SITE_URL } from '@/lib/reviews';
 
-const display = Nunito({
-  subsets: ['latin'],
-  variable: '--font-display',
-  display: 'swap',
-});
 
 
 
