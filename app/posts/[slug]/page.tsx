@@ -149,12 +149,9 @@ export default async function ReviewPage({ params }: Props) {
           <ReviewToc items={toc} />
         </div>
       </div>
-<a
-            
         </div>
       </div>
     </>
   );
 }
 
-// CTA injected
