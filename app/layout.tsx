@@ -23,8 +23,7 @@ export const metadata: Metadata = {
     default: 'Penny Holiday | Budget Maldives travel guides — guesthouses, cheap flights, all-inclusive compar',
     template: '%s | Penny Holiday',
   },
-  description:
-    'Independent Budget Maldives travel guides — guesthouses, cheap flights, all-inclusive compar: used buyer guides, ANCAP context, recalls, running costs, and honest comparisons.',
+  description: 'Budget Maldives travel guides — guesthouses, cheap flights, all-inclusive comparisons, and how to go for less.',
   openGraph: {
     type: 'website',
     locale: 'en_AU',
@@ -36,7 +35,7 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: '/' },
   robots: { index: true, follow: true },
-  category: 'automotive',
+  category: 'travel',
 };
 
 export const viewport: Viewport = {
