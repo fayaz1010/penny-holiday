@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!raw) return { title: 'Not found' };
   const title = extractTitleFromArticleHtml(raw);
   const description = extractMetaDescription(raw);
-  const url = `${SITE_URL}/guides/${slug}`;
+  const url = `${SITE_URL}/posts/${slug}`;
   return {
     title,
     description: description || `${title} — Penny Holiday Budget Maldives travel guide.`,
@@ -53,10 +53,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function jsonLdArticle(slug: string, title: string, description: string | undefined) {
-  const url = `${SITE_URL}/guides/${slug}`;
+  const url = `${SITE_URL}/posts/${slug}`;
   return {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: title,
     description: description || title,
     url,
@@ -79,8 +79,8 @@ function jsonLdBreadcrumb(slug: string, title: string) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${SITE_URL}/guides` },
-      { '@type': 'ListItem', position: 3, name: title, item: `${SITE_URL}/guides/${slug}` },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${SITE_URL}/posts` },
+      { '@type': 'ListItem', position: 3, name: title, item: `${SITE_URL}/posts/${slug}` },
     ],
   };
 }
@@ -123,7 +123,7 @@ export default async function ReviewPage({ params }: Props) {
             Home
           </Link>
           <span className="mx-2">/</span>
-          <Link href="/guides" className="hover:text-road-400">
+          <Link href="/posts" className="hover:text-road-400">
             Guides
           </Link>
           <span className="mx-2">/</span>
@@ -149,20 +149,8 @@ export default async function ReviewPage({ params }: Props) {
           <ReviewToc items={toc} />
         </div>
       </div>
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 mt-8 mb-4">
-        <div className="rounded-2xl bg-ink-800/60 ring-1 ring-white/10 p-6 flex flex-col sm:flex-row items-center gap-4">
-          <div className="flex-1">
-            <p className="font-display text-white font-semibold">Looking for the complete Maldives guide?</p>
-            <p className="text-sm text-slate-400 mt-1">Browse hundreds of expert resort reviews, itineraries and travel tips on aMaldives.</p>
-          </div>
-          <a
-            href="https://amaldives.com"
-            target="_blank"
-            rel="noopener"
-            className="shrink-0 rounded-full bg-road-500 px-6 py-3 text-sm font-semibold text-ink-950 hover:bg-road-400 transition-colors"
-          >
-            Visit amaldives.com →
-          </a>
+<a
+            
         </div>
       </div>
     </>

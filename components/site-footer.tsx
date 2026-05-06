@@ -7,24 +7,13 @@ export function SiteFooter() {
         <div>
           <p className="font-display text-white font-medium mb-1">Penny Holiday</p>
           <p className="max-w-sm">
-            Budget Maldives travel guides — guesthouses, cheap flights, all-inclusive comparisons, and how to go for less.
+            Independent travel guides for the Maldives. All content is editorial — we do not accept paid placements.
           </p>
-          <a
-            href="https://amaldives.com"
-            target="_blank"
-            rel="noopener"
-            className="inline-block mt-3 text-road-400 hover:text-road-300 transition-colors"
-          >
-            Explore all Maldives guides on amaldives.com →
-          </a>
         </div>
         <div className="flex flex-col gap-2">
-          <Link href="/guides" className="hover:text-road-400 transition-colors">
+          <Link href="/posts" className="hover:text-slate-300 transition-colors">
             All guides
           </Link>
-          <a href="https://amaldives.com" target="_blank" rel="noopener" className="hover:text-road-400 transition-colors">
-            amaldives.com
-          </a>
           <span>© {new Date().getFullYear()} pennyholiday.com</span>
         </div>
       </div>
