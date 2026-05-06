@@ -28,7 +28,7 @@ export default function HomePage() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="/guides"
+              href="/posts"
               className="inline-flex items-center justify-center rounded-full bg-road-500 px-8 py-3.5 text-sm font-semibold text-ink-950 shadow-card hover:bg-road-400 transition-colors"
             >
               Browse guides
@@ -49,7 +49,7 @@ export default function HomePage() {
             <h2 className="font-display text-2xl font-semibold text-white">Latest guides</h2>
             <p className="text-slate-500 text-sm mt-1">Updated regularly with fresh guides.</p>
           </div>
-          <Link href="/guides" className="text-sm text-road-400 hover:text-road-300 font-medium">
+          <Link href="/posts" className="text-sm text-road-400 hover:text-road-300 font-medium">
             View all →
           </Link>
         </div>

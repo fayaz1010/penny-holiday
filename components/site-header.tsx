@@ -9,24 +9,16 @@ export function SiteHeader() {
             P
           </span>
           <div className="leading-tight">
-            <span className="font-display text-lg font-semibold tracking-tight text-white group-hover:text-road-300 transition-colors">
+            <span className="font-display text-lg font-semibold tracking-tight text-white group-hover:text-slate-300 transition-colors">
               Penny Holiday
             </span>
-            <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-mist">Smart Budget Travel Guides</span>
+            <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-slate-500">Smart Budget Travel Guides</span>
           </div>
         </Link>
         <nav className="flex items-center gap-6 text-sm font-medium">
-          <Link href="/guides" className="text-slate-400 hover:text-white transition-colors">
+          <Link href="/posts" className="text-slate-400 hover:text-white transition-colors">
             Guides
           </Link>
-          <a
-            href="https://amaldives.com"
-            target="_blank"
-            rel="noopener"
-            className="rounded-full bg-road-500/15 px-4 py-2 text-road-300 ring-1 ring-road-500/30 hover:bg-road-500/25 transition-colors"
-          >
-            Full Maldives Guide →
-          </a>
         </nav>
       </div>
     </header>
