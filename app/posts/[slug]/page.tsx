@@ -149,8 +149,6 @@ export default async function ReviewPage({ params }: Props) {
           <ReviewToc items={toc} />
         </div>
       </div>
-        </div>
-      </div>
     </>
   );
 }
