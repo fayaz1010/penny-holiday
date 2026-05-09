@@ -7,7 +7,7 @@ export function SiteFooter() {
         <div>
           <p className="font-display text-white font-medium mb-1">Penny Holiday</p>
           <p className="max-w-sm">
-            Independent travel guides for the Maldives. All content is editorial — we do not accept paid placements.
+            Budget Maldives travel guides — guesthouse picks, cheap flight strategies, value resorts and honest cost breakdowns for every budget.
           </p>
         </div>
         <div className="flex flex-col gap-2">

@@ -9,7 +9,7 @@ type Props = {
 export function ReviewCard({ slug, title, description }: Props) {
   return (
     <Link
-      href={`/guides/${slug}`}
+      href={`/posts/${slug}`}
       className="group relative flex flex-col overflow-hidden rounded-2xl bg-ink-800/60 ring-1 ring-white/10 transition-all hover:ring-road-500/40 hover:shadow-lift"
     >
       <div className="relative aspect-[16/10] w-full overflow-hidden">

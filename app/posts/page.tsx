@@ -10,13 +10,13 @@ import {
 import { ReviewCard } from '@/components/review-card';
 
 export const metadata: Metadata = {
-  title: 'All guides',
-  description: 'Browse independent Budget Maldives travel guide — used buyers, ANCAP, recalls, and ownership costs.',
-  alternates: { canonical: `${SITE_URL}/reviews` },
-  openGraph: { url: `${SITE_URL}/reviews` },
+  title: 'Budget Maldives Travel Guides',
+  description: 'Honest budget Maldives travel guides — how to visit on less, cheap flights, guesthouse picks, all-inclusive comparisons and money-saving tips.',
+  alternates: { canonical: `${SITE_URL}/posts` },
+  openGraph: { url: `${SITE_URL}/posts` },
 };
 
-export default function ReviewsIndexPage() {
+export default function PostsIndexPage() {
   const slugs = listReviewSlugs();
   const cards = slugs.map((slug) => {
     const raw = readArticleHtml(slug)!;
@@ -34,12 +34,11 @@ export default function ReviewsIndexPage() {
           Home
         </Link>
         <span className="mx-2">/</span>
-        <span className="text-slate-300">Reviews</span>
+        <span className="text-slate-300">Guides</span>
       </nav>
-      <h1 className="font-display text-4xl font-semibold text-white mb-4">Reviews</h1>
+      <h1 className="font-display text-4xl font-semibold text-white mb-4">Budget Maldives Guides</h1>
       <p className="text-slate-400 max-w-2xl mb-12">
-        Every guide is generated with source-backed facts and an honest aggregation voice — see each article for
-        citations and methodology.
+        Practical guides for visiting the Maldives without breaking the bank — guesthouse stays, cheap flights, budget resorts and day-by-day cost breakdowns.
       </p>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((c) => (
