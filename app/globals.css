@@ -63,7 +63,7 @@ html {
   @apply text-terra-400 underline-offset-[3px] decoration-terra-500/35 hover:text-terra-300 hover:decoration-terra-400/60 hover:underline;
 }
 .review-prose table {
-  @apply w-full text-sm my-8 border border-white/10 rounded-xl overflow-hidden shadow-card;
+  @apply w-full text-sm my-8 border border-white/10 rounded-xl overflow-hidden shadow-lg;
 }
 .review-prose th {
   @apply bg-sage-800/90 text-left p-3.5 text-terra-300 font-semibold;
@@ -81,7 +81,7 @@ html {
   @apply my-8;
 }
 .review-prose figure.automore-hero {
-  @apply -mx-1 rounded-xl overflow-hidden ring-1 ring-white/10 shadow-card sm:mx-0;
+  @apply -mx-1 rounded-xl overflow-hidden ring-1 ring-white/10 shadow-lg sm:mx-0;
 }
 .review-prose figure.automore-hero img {
   @apply w-full h-auto rounded-xl;
