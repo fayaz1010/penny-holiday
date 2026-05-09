@@ -4,6 +4,8 @@ import path from 'node:path';
 import { listReviewSlugs, SITE_URL } from '@/lib/reviews';
 import { REVIEWS_DIR } from '@/lib/paths';
 
+export const dynamic = 'force-static';
+
 function mtime(slug: string): Date {
   try {
     const p = path.join(REVIEWS_DIR, slug, 'article.html');
