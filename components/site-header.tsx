@@ -16,6 +16,9 @@ export function SiteHeader() {
           </div>
         </Link>
         <nav className="flex items-center gap-6 text-sm font-medium">
+          <Link href="/win" className="text-amber-400 hover:text-amber-300 transition-colors font-semibold">
+            🎁 Win a Holiday
+          </Link>
           <Link href="/posts" className="text-slate-400 hover:text-white transition-colors">
             Guides
           </Link>

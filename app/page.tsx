@@ -23,8 +23,7 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-slate-400 leading-relaxed">
-            Used-buyer guides with ANCAP context, recalls, running costs, and honest comparisons — written for Australian
-            roads and budgets.
+            Budget Maldives guides for real travellers — how to visit for less, cheap flight strategies, guesthouse picks and honest resort cost breakdowns.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
