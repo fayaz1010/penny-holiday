@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   poweredByHeader: false,
-  outputFileTracingIncludes: {
-    '/reviews/[slug]': ['./content/reviews/**/*'],
+  images: {
+    unoptimized: true,
   },
 };
 
