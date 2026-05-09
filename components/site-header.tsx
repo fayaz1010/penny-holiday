@@ -5,11 +5,10 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-white/5 bg-ink-950/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="group flex items-center gap-2">
-          <img
-            src="/images/logo.jpeg"
-            alt="Site Logo"
-            className="h-9 w-auto object-contain"
-          />
+          <svg viewBox="0 0 40 40" className="h-9 w-9 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="#c9764f" strokeWidth="2.5"/>
+            <text x="20" y="26" textAnchor="middle" fontSize="18" fontWeight="bold" fill="#c9764f" fontFamily="serif">£</text>
+          </svg>
           <div className="leading-tight">
             <span className="font-display text-lg font-semibold tracking-tight text-white group-hover:text-slate-300 transition-colors">
               Penny Holiday

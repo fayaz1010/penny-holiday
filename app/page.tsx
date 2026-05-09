@@ -15,20 +15,20 @@ export default function HomePage() {
     <>
       <section className="relative overflow-hidden border-b border-white/5">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
-          <p className="text-sm font-medium uppercase tracking-[0.25em] text-road-400 mb-4">Budget Maldives travel guide</p>
+          <p className="text-sm font-medium uppercase tracking-[0.25em] text-terra-400 mb-4">Global budget travel deals &amp; trip planning</p>
           <h1 className="font-display text-4xl sm:text-6xl font-semibold tracking-tight text-white max-w-3xl leading-[1.1]">
             Penny Holiday.{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-road-300 to-amber-200">
-              Explore now.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-terra-300 to-amber-200">
+              Travel smarter.
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-slate-400 leading-relaxed">
-            Budget Maldives guides for real travellers — how to visit for less, cheap flight strategies, guesthouse picks and honest resort cost breakdowns.
+            Real budget travel guides for every destination — cheapest trip breakdowns, last-minute deals, off-season timing tips and exact daily cost comparisons worldwide.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/posts"
-              className="inline-flex items-center justify-center rounded-full bg-road-500 px-8 py-3.5 text-sm font-semibold text-ink-950 shadow-card hover:bg-road-400 transition-colors"
+              className="inline-flex items-center justify-center rounded-full bg-terra-500 px-8 py-3.5 text-sm font-semibold text-sage-950 shadow-terra hover:bg-terra-400 transition-colors"
             >
               Browse guides
             </Link>
@@ -48,7 +48,7 @@ export default function HomePage() {
             <h2 className="font-display text-2xl font-semibold text-white">Latest guides</h2>
             <p className="text-slate-500 text-sm mt-1">Updated regularly with fresh guides.</p>
           </div>
-          <Link href="/posts" className="text-sm text-road-400 hover:text-road-300 font-medium">
+          <Link href="/posts" className="text-sm text-terra-400 hover:text-terra-300 font-medium">
             View all →
           </Link>
         </div>
@@ -61,3 +61,4 @@ export default function HomePage() {
     </>
   );
 }
+
