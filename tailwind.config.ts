@@ -5,17 +5,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: { 950: '#0a0c10', 900: '#11141c', 800: '#1a1f2a', 700: '#252b38' },
-        road: { 500: '#f59e0b', 400: '#fbbf24', 300: '#fcd34d' },
-        mist: '#94a3b8',
+        sage: { 950: '#2a3a2f', 900: '#3d5245', 800: '#5a6f5a', 700: '#6d8570' },
+        terra: { 500: '#c9764f', 400: '#d4906b', 300: '#e0a881' },
+        cream: '#faf7f2',
       },
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        lift: '0 24px 80px -20px rgba(0,0,0,.55)',
-        card: '0 4px 24px rgba(0,0,0,.35)',
+        warm: '0 8px 28px rgba(93, 111, 90, 0.12)',
+        terra: '0 4px 16px rgba(201, 118, 79, 0.1)',
       },
     },
   },
