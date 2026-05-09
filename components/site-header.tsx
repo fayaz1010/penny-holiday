@@ -5,9 +5,11 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-white/5 bg-ink-950/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="group flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-green-700 font-display text-lg font-bold text-white shadow-card">
-            P
-          </span>
+          <img
+            src="/images/logo.jpeg"
+            alt="Site Logo"
+            className="h-9 w-auto object-contain"
+          />
           <div className="leading-tight">
             <span className="font-display text-lg font-semibold tracking-tight text-white group-hover:text-slate-300 transition-colors">
               Penny Holiday
