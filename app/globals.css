@@ -24,7 +24,7 @@ html {
   @apply mt-2;
 }
 .review-prose h3 {
-  @apply font-display text-lg font-semibold text-road-300 mt-10 mb-3 tracking-tight;
+  @apply font-display text-lg font-semibold text-terra-300 mt-10 mb-3 tracking-tight;
 }
 .review-prose h4 {
   @apply text-base font-semibold text-slate-100 mt-8 mb-2;
@@ -40,11 +40,11 @@ html {
   @apply font-semibold text-slate-100;
 }
 .review-prose .keyword {
-  @apply text-road-300/95 underline decoration-road-500/40 decoration-1 underline-offset-2;
+  @apply text-terra-300/95 underline decoration-terra-500/40 decoration-1 underline-offset-2;
 }
 .review-prose ul,
 .review-prose ol {
-  @apply my-5 pl-6 text-slate-300 space-y-2.5 marker:text-road-500/80;
+  @apply my-5 pl-6 text-slate-300 space-y-2.5 marker:text-terra-500/80;
 }
 .review-prose ul {
   @apply list-disc;
@@ -60,13 +60,13 @@ html {
   @apply my-12 border-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent;
 }
 .review-prose a {
-  @apply text-road-400 underline-offset-[3px] decoration-road-500/35 hover:text-road-300 hover:decoration-road-400/60 hover:underline;
+  @apply text-terra-400 underline-offset-[3px] decoration-terra-500/35 hover:text-terra-300 hover:decoration-terra-400/60 hover:underline;
 }
 .review-prose table {
   @apply w-full text-sm my-8 border border-white/10 rounded-xl overflow-hidden shadow-card;
 }
 .review-prose th {
-  @apply bg-ink-800/90 text-left p-3.5 text-road-300 font-semibold;
+  @apply bg-sage-800/90 text-left p-3.5 text-terra-300 font-semibold;
 }
 .review-prose td {
   @apply p-3.5 border-t border-white/[0.07] align-top;
@@ -75,7 +75,7 @@ html {
   @apply bg-white/[0.02];
 }
 .review-prose blockquote {
-  @apply border-l-[3px] border-road-500 pl-5 pr-3 my-8 text-slate-400 not-italic bg-gradient-to-r from-road-500/[0.08] to-transparent py-4 rounded-r-lg;
+  @apply border-l-[3px] border-terra-500 pl-5 pr-3 my-8 text-slate-400 not-italic bg-gradient-to-r from-terra-500/[0.08] to-transparent py-4 rounded-r-lg;
 }
 .review-prose figure {
   @apply my-8;
@@ -90,13 +90,13 @@ html {
   @apply mt-3 px-1 text-sm text-slate-500 leading-snug;
 }
 .review-prose figure.automore-hero figcaption a {
-  @apply text-road-400/90;
+  @apply text-terra-400/90;
 }
 .review-prose [itemscope][itemtype*='schema.org/Article'] meta {
   @apply hidden;
 }
 .review-prose code {
-  @apply rounded bg-ink-950/80 px-1.5 py-0.5 text-[0.9em] text-road-300 ring-1 ring-white/10;
+  @apply rounded bg-sage-950/80 px-1.5 py-0.5 text-[0.9em] text-terra-300 ring-1 ring-white/10;
 }
 .review-prose sup,
 .review-prose sub {
