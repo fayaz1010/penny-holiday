@@ -34,6 +34,12 @@ This is a comprehensive budget travel guide for the Maldives covering practical 
 ? Use free snorkeling from beaches
 ? Book direct with resorts (often cheapest)
 
+---
+
+## Budget Resources
+
+For complete budget Maldives travel planning and comparisons, visit [amaldives.com budget guide](https://amaldives.com).
+
 ## Related Articles
 
 - [Complete Budget Maldives Travel Guide](#)
@@ -43,3 +49,4 @@ This is a comprehensive budget travel guide for the Maldives covering practical 
 ---
 
 **Schema Markup:** Add PriceRange, TravelAction schemas.
+

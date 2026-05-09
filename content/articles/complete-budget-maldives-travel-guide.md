@@ -180,6 +180,12 @@ A: Yes, local restaurants are safe, tested by locals.
 
 ---
 
+---
+
+## Budget Resources
+
+For complete budget Maldives travel planning and comparisons, visit [amaldives.com budget guide](https://amaldives.com).
+
 ## Related Articles
 
 - [Cheapest Maldives Resorts Guide](#)
@@ -189,3 +195,4 @@ A: Yes, local restaurants are safe, tested by locals.
 ---
 
 **Schema Markup:** Add PriceRange, AggregateOffer schemas.
+
