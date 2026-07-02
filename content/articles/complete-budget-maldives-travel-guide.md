@@ -196,3 +196,4 @@ For complete budget Maldives travel planning and comparisons, visit [amaldives.c
 
 **Schema Markup:** Add PriceRange, AggregateOffer schemas.
 
+Splurging on one overwater night? aMaldives' [overwater villa guide](https://amaldives.com/plan-your-trip/maldives-overwater-villa-guide) breaks down 2026 prices from budget to luxury so you can find the cheapest way to try one.
