@@ -1,23 +1,21 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
-export async function POST(req: NextRequest) {
-  try {
-    const body = await req.json();
-    const webhookUrl = process.env.WIN_WEBHOOK_URL;
-    if (webhookUrl) {
-      await fetch(webhookUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          source: 'pennyholiday.com',
-          type: 'giveaway_entry',
-          timestamp: new Date().toISOString(),
-          ...body,
-        }),
-      });
-    }
-    return NextResponse.json({ ok: true });
-  } catch {
-    return NextResponse.json({ ok: false }, { status: 500 });
-  }
+/**
+ * Giveaway entries are CLOSED (entries closed 27 June 2026, drawn 28 June).
+ *
+ * This endpoint used to forward to WIN_WEBHOOK_URL if that variable was set,
+ * and return `{ok:true}` either way — so with the variable unset it accepted
+ * name, email, phone and city and dropped every one of them while the page
+ * said "You're in the draw!".
+ *
+ * It now refuses. 410 Gone is deliberate: any cached copy of the old client
+ * gets a hard failure rather than a silent success. Do not restore the
+ * accept-and-forward behaviour without a live draw AND a destination that is
+ * verified to persist the entry.
+ */
+export async function POST() {
+  return NextResponse.json(
+    { ok: false, error: 'This giveaway has closed and is no longer accepting entries.' },
+    { status: 410 }
+  );
 }
