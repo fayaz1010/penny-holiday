@@ -129,3 +129,19 @@ export function extractH2Toc(html: string): TocItem[] {
   }
   return out;
 }
+
+/** Convert inline markdown syntax to HTML (bold, italic, code). */
+export function convertInlineMarkdown(html: string): string {
+  let result = html;
+  
+  // Convert **bold** to <strong>bold</strong>
+  result = result.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  
+  // Convert *italic* to <em>italic</em> (but not if preceded by another *)
+  result = result.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+  
+  // Convert `code` to <code>code</code> (but not if already in a <code> tag)
+  result = result.replace(/`([^`]+)`/g, '<code>$1</code>');
+  
+  return result;
+}
