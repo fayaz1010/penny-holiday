@@ -12,6 +12,7 @@ import {
   stripFirstH1,
   ensureH2Ids,
   extractH2Toc,
+  convertInlineMarkdown,
   SITE_URL,
 } from '@/lib/guides';
 import { ArticleBody } from '@/components/article-body';
@@ -102,7 +103,8 @@ export default async function ReviewPage({ params }: Props) {
   const description = extractMetaDescription(raw);
   const bodyInner = stripFirstH1(extractBodyInner(raw));
   const withIds = ensureH2Ids(bodyInner);
-  const inner = rewriteMediaSources(slug, withIds);
+  const withMedia = rewriteMediaSources(slug, withIds);
+  const inner = convertInlineMarkdown(withMedia);
   const toc = extractH2Toc(withIds);
   const saved = readSavedMeta(slug);
   const updatedLabel = formatReviewDate(saved);
