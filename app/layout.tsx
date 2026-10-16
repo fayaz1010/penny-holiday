@@ -19,10 +19,10 @@ import { SITE_URL } from '@/lib/reviews';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Penny Holiday | Budget Maldives travel guides — guesthouses, cheap flights, all-inclusive compar',
+    default: 'Penny Holiday | Budget Travel Guides, Cheap Flights & Deals',
     template: '%s | Penny Holiday',
   },
-  description: 'Budget Maldives travel guides — guesthouses, cheap flights, all-inclusive comparisons, and how to go for less.',
+  description: 'Budget travel guides with real costs: cheap flights, affordable stays and deals for Bali, Thailand, Europe, the Maldives and more. Travel more for less.',
   openGraph: {
     type: 'website',
     locale: 'en_AU',
