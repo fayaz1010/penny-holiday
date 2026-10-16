@@ -8,7 +8,7 @@ export function SiteFooter() {
           <div>
             <p className="font-display text-white font-medium mb-1">Penny Holiday</p>
             <p className="max-w-sm">
-              Budget Maldives travel guides — guesthouse picks, cheap flight strategies, value resorts and honest cost breakdowns for every budget.
+              Budget travel guides — cheap flight strategies, affordable stays, destination costs from Bali to the Maldives and honest breakdowns for every budget.
             </p>
           </div>
           <div className="flex flex-col gap-2">
