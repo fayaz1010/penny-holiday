@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Contact Us',
   description: 'Get in touch with Penny Holiday — questions, feedback, or partnership enquiries.',
+  alternates: { canonical: '/contact' },
   robots: { index: true, follow: true },
 };
 

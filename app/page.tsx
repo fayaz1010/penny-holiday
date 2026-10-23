@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import { listReviewSlugs, readArticleHtml, extractTitleFromArticleHtml, extractMetaDescription } from '@/lib/reviews';
 import { ReviewCard } from '@/components/review-card';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+};
 
 export default function HomePage() {
   const slugs = listReviewSlugs().slice(0, 6);

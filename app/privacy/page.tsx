@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy policy for Penny Holiday — how we handle your information.',
+  alternates: { canonical: '/privacy' },
   robots: { index: true, follow: true },
 };
 
