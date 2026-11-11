@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/posts/when-is-the-cheapest-time-to-fly-from-australia",
+      "destination": "/posts/cheapest-time-to-fly",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
