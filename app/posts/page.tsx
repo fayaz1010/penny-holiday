@@ -10,8 +10,8 @@ import {
 import { ReviewCard } from '@/components/review-card';
 
 export const metadata: Metadata = {
-  title: 'Budget Maldives Travel Guides',
-  description: 'Honest budget Maldives travel guides — how to visit on less, cheap flights, guesthouse picks, all-inclusive comparisons and money-saving tips.',
+  title: 'Budget Travel Guides',
+  description: 'Budget travel guides for Australian travellers — cheap flights, daily costs, affordable destinations and money-saving tips.',
   alternates: { canonical: `${SITE_URL}/posts` },
   openGraph: { url: `${SITE_URL}/posts` },
 };
@@ -36,9 +36,9 @@ export default function PostsIndexPage() {
         <span className="mx-2">/</span>
         <span className="text-slate-300">Guides</span>
       </nav>
-      <h1 className="font-display text-4xl font-semibold text-white mb-4">Budget Maldives Guides</h1>
+      <h1 className="font-display text-4xl font-semibold text-white mb-4">Budget Travel Guides</h1>
       <p className="text-slate-400 max-w-2xl mb-12">
-        Practical guides for visiting the Maldives without breaking the bank — guesthouse stays, cheap flights, budget resorts and day-by-day cost breakdowns.
+        Practical guides for travelling on less — cheap flights from Australia, daily costs, hostels and affordable escapes from Bali to Japan and the Maldives.
       </p>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((c) => (
