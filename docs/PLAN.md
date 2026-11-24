@@ -1,0 +1,31 @@
+# Penny Holiday development plan
+
+Goal: Penny Holiday earns money from affiliate commissions when Australian budget travellers click from its guides through to book flights, stays, hostels and travel insurance; display ads and a deal-alert email list follow once there is traffic.
+
+Where it stands (24 Nov 2026): pennyholiday.com is a Next.js static export on GitHub Pages with about 55 guides. Search Console shows 600 impressions and 0 clicks in the last 90 days. The roughly 210 outbound links to Skyscanner, Booking.com and Hostelworld are plain homepage links with no partner tracking, so the site cannot earn today. There is no analytics, the contact page shows "[TODO]" placeholders, and every guide's share image (`/api/media/<slug>`) and the schema logo (`/logo.png`) return 404 because static hosting has no API routes.
+
+## Now
+
+- [ ] PLAN-01 Affiliate link layer: one config file (`lib/affiliates.ts`) holds each partner's tracked URL pattern and ID, and every outbound Skyscanner, Booking.com, Hostelworld, Expedia and Jetstar link in a guide is rewritten at build time to the tracked form with `rel="sponsored nofollow"` — done when a build check fails on any partner link in `out/` that lacks `rel="sponsored"`, and setting a partner ID in the config changes every link to that partner in the built pages
+- [ ] PLAN-02 Affiliate disclosure and real contact details: a disclosure line on every guide, privacy and terms pages updated to describe affiliate links, and the contact page placeholders replaced — done when no page in `out/` contains "[TODO" and every `/posts/<slug>` page contains the disclosure text
+- [ ] PLAN-03 Booking call-to-action on every guide, deep-linked to the destination: the `booking-cta` block used on three guides becomes a shared component whose links go to a destination-specific search (for example flights from Australia to Bali) instead of a partner homepage — done when every `/posts/<slug>` page in `out/` contains the booking CTA with at least one destination-specific partner URL
+- [ ] PLAN-04 Working share images and schema logo: replace the `/api/media/<slug>` image URLs and `/logo.png` with static files that exist in the export — done when a build check confirms every `og:image`, `twitter:image` and JSON-LD `logo` URL on every page resolves to a file in `out/`, and the live URLs return 200
+- [ ] PLAN-05 Cookieless analytics with partner-click tracking: page views plus an event on each partner link click carrying partner and guide slug, with the privacy page updated to match — done when clicking a partner link on the live site records an event showing the partner and the guide, and the privacy page no longer says the site runs no analytics
+- [ ] PLAN-06 Win clicks on the six guides that already get impressions (cheapest countries from Australia, Sri Lanka cost per day, cheap international holidays, complete budget Maldives guide, airline miles, scoring cheap flights): rewritten titles and descriptions, a quick-answer block at the top, a visible updated date, and the "Budget Maldives travel guide" fallback description removed — done when each of the six has a unique title of at most 60 characters and description of at most 155, a quick-answer block above the first heading, and no page in `out/` contains the Maldives fallback description
+
+## Next
+
+- [ ] PLAN-07 Deal-alert email sign-up that works on static hosting, with a destination proven to store the address before the form goes live (the old giveaway form silently dropped entries) — done when a test address submitted on the live site appears in the mailing list and receives a confirmation email
+- [ ] PLAN-08 Merge guides that compete for the same search (four cheap-flights guides, two cheapest-countries guides, two budget Maldives guides) into one page per topic, with static redirects from the retired URLs — done when each topic has one indexed guide and every retired URL redirects to it on the live site
+- [ ] PLAN-09 Cost-per-day guides for the next ten destinations Australians search, in the format of the Bali and Sri Lanka pages that rank best (positions 7 and 21) — done when ten new `/posts/<destination>-travel-cost-per-day` pages are live, each with a daily budget table, sources and a booking CTA
+- [ ] PLAN-10 Build checks in CI for content quality: broken internal links, missing titles or descriptions, placeholder text, and sitemap entries that do not match built pages — done when CI fails a pull request that introduces any of the four
+- [ ] PLAN-11 Named author and editorial standards: author box and updated date on each guide, an about page that says who writes the guides and how prices are checked — done when every guide shows an author and date and the article schema names a person as author
+- [ ] PLAN-12 Repository clean-up and an accurate README: remove files left from another project (car history PDF, car image script, the Vercel deploy notes and `vercel.json` that GitHub Pages ignores, the dead `/api/enter-win` route) and document how the site builds and deploys — done when the README describes the GitHub Pages deploy, the listed files are gone, and the build still passes
+
+## Later
+
+- [ ] PLAN-13 Trip cost calculator: pick a destination, nights and travel style and get a total budget with booking links — done when the calculator is live for at least ten destinations and its partner links record click events
+- [ ] PLAN-14 Monthly deals page kept current: the "travel deals this month" guide refreshed each month from current airline and hotel sales — done when the page shows the current month and at least five dated, sourced deals for three months in a row
+- [ ] PLAN-15 Comparison pages for travel insurance, travel money cards and eSIMs with their own affiliate programmes — done when three comparison pages are live with tracked partner links and disclosure
+- [ ] PLAN-16 Display advertising once traffic supports it — done when the site passes 10,000 sessions in a month and an ad network is approved and serving on guide pages
+- [ ] PLAN-17 Weekly deal-alert email to subscribers with tracked partner links — done when four consecutive weekly emails have been sent to the list and their clicks appear in analytics
